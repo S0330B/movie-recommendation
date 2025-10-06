@@ -5,7 +5,7 @@ import pandas as pd
 import requests
 import os
 
-st.title("🎬 Movie Recommender System")
+st.title("🎬 Movie Recommendation System")
 
 movies = pickle.load(open('model/movies.pkl', 'rb'))
 with bz2.BZ2File('model/similarity.pbz2', 'rb') as f:
